@@ -5,6 +5,7 @@ html[data-theme="light"] {
   --bg-nav-img: #000000;
   --bg: #ffffff;
   --text: #191919;
+  --alt: #000000;
   --text-color: #6c757d;
 }
 
@@ -14,6 +15,7 @@ html[data-theme="dark"] {
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
+  --alt: #ffffff;
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
@@ -52,6 +54,10 @@ html {
   letter-spacing: 2px;
   line-height: normal;
   color: var(--text-color);
+}
+
+.card{
+  background-color: var(--alt);
 }
 
 /*SCROLL TO TOP BUTTON dark/light mode*/
@@ -279,9 +285,20 @@ p {
 }
 
 .s2 h4,p{
-  color:black;
+  color:var(--text);
 }
 
+h5,h6{
+  color: var(--bg);
+}
+
+.special{
+  color: var(--bg);
+}
+
+.card-img{
+  color: var(--bg);
+}
 
 /*Transition for Toggle*/
 
